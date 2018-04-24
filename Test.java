@@ -4,6 +4,27 @@ import javax.swing.*;
 
 public class Test extends JFrame {
 
+    JPanel jp = new JPanel();
+
+    public Test() {
+        setTitle("Test");                           //set name of the window
+        setSize(550, 105);                          //set window size
+        setVisible(true);                           //set it so it is visible
+        setDefaultCloseOperation(EXIT_ON_CLOSE);    //set it so that the program exits when x button is pressed
+
+        jp.setLayout(new FlowLayout());
+        jp.add(new JButton("Button1"));
+        jp.add(new JButton("Button2"));
+        jp.add(new JButton("Button3"));
+
+        add(jp);
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+    }
+
+    /*
     JLabel jl;                                      //declare JLabel
     JButton jb;                                     //declare JButton
     JPanel jp, jp2;                                 //declare both JPanels
@@ -26,7 +47,7 @@ public class Test extends JFrame {
         add(jp2, BorderLayout.SOUTH);               //adding the JPanel but to the bottom of the JFrame
     }
 
-    /*
+
     public void paint(Graphics g) {
         g.setColor(Color.RED);                      //set color to red
         g.drawRect(480, 480, 200, 100);             //draw a rectangle at 480, 480 with size 200 x 100
@@ -40,10 +61,11 @@ public class Test extends JFrame {
         g.setColor(Color.YELLOW);                   //set color to yellow
         g.fillOval(240, 240, 200, 200);             //fill a circle at 240, 240 with radius 100
     }
-    */
+
 
     public static void main(String[] args) {
         Test t = new Test();                        //declaring Test object
         //t.paint(null);                              //calling paintRectangle method
     }
+    */
 }
