@@ -12,12 +12,15 @@ public class Test extends JFrame {
         setVisible(true);                           //set it so it is visible
         setDefaultCloseOperation(EXIT_ON_CLOSE);    //set it so that the program exits when x button is pressed
 
-        jp.setLayout(new FlowLayout());
-        jp.add(new JButton("Button1"));
+        jp.setLayout(new FlowLayout(1, 50, 50));    //setting flow layout
+                                                    //1st number for alignment(negative:left, positive:right)
+                                                    //2nd number for space between elements
+                                                    //3rd numbers for space from the top
+        jp.add(new JButton("Button1"));             //adding three numbers
         jp.add(new JButton("Button2"));
         jp.add(new JButton("Button3"));
 
-        add(jp);
+        add(jp);                                    //add the entire panel
     }
 
     public static void main(String[] args) {
