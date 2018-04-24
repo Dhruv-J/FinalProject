@@ -4,9 +4,9 @@ import javax.swing.*;
 
 public class Test extends JFrame {
 
-    JLabel jl;
-    JButton jb;
-    JPanel jp, jp2;
+    JLabel jl;                                      //declare JLabel
+    JButton jb;                                     //declare JButton
+    JPanel jp, jp2;                                 //declare both JPanels
 
     public Test() {
         setTitle("Test");                           //set name of the window
@@ -14,16 +14,16 @@ public class Test extends JFrame {
         setVisible(true);                           //set it so it is visible
         setDefaultCloseOperation(EXIT_ON_CLOSE);    //set it so that the program exits when x button is pressed
 
-        jp = new JPanel();
+        jp = new JPanel();                          //initializing JPanels
         jp2 = new JPanel();
 
-        jl = new JLabel("Message");
-        jp.add(jl);
-        add(jp);
+        jl = new JLabel("Message");                 //setting message for JLabel as 'message'
+        jp.add(jl);                                 //adding the JLabel to the first JPanel
+        add(jp);                                    //adding the first JPanel to the window
 
-        jb = new JButton("Press Me");
-        jp2.add(jb);
-        add(jp2, BorderLayout.SOUTH);
+        jb = new JButton("Press Me");               //setting message for JButton as 'Press Me'
+        jp2.add(jb);                                //adding the JButton to the second JPanel
+        add(jp2, BorderLayout.SOUTH);               //adding the JPanel but to the bottom of the JFrame
     }
 
     /*
